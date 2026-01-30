@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0ea5a4" />
+
+  <title>Contact – Safe Tasks India</title>
+  <meta name="description" content="Contact Safe Tasks India for questions about safe online earning and task-based work. Use the contact form (with JS validation) or email us directly." />
+
+  <meta property="og:title" content="Contact – Safe Tasks India" />
+  <meta property="og:description" content="Questions about online tasks for money in India? Contact us or join Telegram for daily task updates." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/contact.html" />
+  <meta property="og:image" content="https://example.com/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- GA4 (replace G-VSR68XG5QJ) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSR68XG5QJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VSR68XG5QJ');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},
+      {"@type":"ListItem","position":2,"name":"Contact","item":"https://example.com/contact.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <div class="brand-badge">₹</div>
+        <span>Safe Tasks India</span>
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+      <nav id="siteNav" class="nav" aria-label="Primary">
+        <a href="how-it-works.html">How it works</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="proofs.html">Payment proofs</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <button class="btn btn-ghost btn-small theme-toggle" id="themeToggle" type="button" aria-pressed="false" title="Toggle dark mode">🌙</button>
+        <a class="btn btn-primary btn-small" href="https://t.me/+P7efOIgccWMwYWM9" data-telegram-cta="header" data-telegram-href>Join Telegram</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span aria-hidden="true">/</span><span>Contact</span>
+      </nav>
+
+      <h1>Contact</h1>
+      <p class="small">For fastest updates, join our Telegram channel. For website-related queries, use the form below or email us.</p>
+
+      <div class="grid mt-12">
+        <div class="card">
+          <h2 class="h2">Send a message</h2>
+          <form id="contactForm" class="form" novalidate>
+            <div>
+              <label class="label" for="name">Name</label>
+              <input class="input" id="name" name="name" autocomplete="name" required />
+              <div class="help">Please enter your name.</div>
+            </div>
+            <div>
+              <label class="label" for="email">Email</label>
+              <input class="input" id="email" name="email" type="email" autocomplete="email" required />
+              <div class="help">We will reply to this email address.</div>
+            </div>
+            <div>
+              <label class="label" for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+              <div class="help">Don’t share OTPs, passwords, UPI PINs, or bank details.</div>
+            </div>
+
+            <div id="contactStatus" class="form-status" hidden></div>
+
+            <button class="btn btn-primary" type="submit">Validate &amp; Submit</button>
+          </form>
+          <p class="small mt-10">This is a static website demo; the form validates and shows a confirmation message but does not send emails automatically.</p>
+        </div>
+
+        <aside class="card">
+          <h2 class="h2">Email</h2>
+          <p class="small">Write to us at: <strong>support@example.com</strong></p>
+          <p class="small">For daily tasks: <a href="https://t.me/+P7efOIgccWMwYWM9" data-telegram-cta="contact_telegram" data-telegram-href>Join Telegram</a></p>
+          <div class="note mt-12">
+            <strong>Safety note:</strong> We never ask for OTP, UPI PIN, or payment to join.
+          </div>
+        </aside>
+      </div>
+
+      <section class="section">
+        <div class="callout">
+          <h2 class="h2">Prefer Telegram?</h2>
+          <p>Join the channel to get task updates and pinned safety rules.</p>
+          <a class="btn btn-primary" href="https://t.me/+P7efOIgccWMwYWM9" data-telegram-cta="contact_final" data-telegram-href>Join Telegram</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Safe Tasks India</strong>
+        <p class="small">We reply to genuine queries. For task updates, Telegram is the fastest channel.</p>
+      </div>
+      <div>
+        <div class="footer-links" aria-label="Footer links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <p class="small">© <span id="year"></span> Safe Tasks India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="btn btn-primary float-telegram" href="https://t.me/+P7efOIgccWMwYWM9" data-telegram-cta="floating" data-telegram-href aria-label="Join Telegram">Join Telegram</a>
+
+  <div class="modal-backdrop" id="tgModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="tgModalTitle" data-open="false">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="tgModalTitle">Want daily tasks?</h3>
+        <button class="modal-close" id="tgModalClose" type="button" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">Join Telegram for daily task posts and weekly payout updates. Safety-first: never pay upfront.</div>
+      <div class="modal-actions">
+        <a class="btn btn-primary" id="tgModalJoin" href="https://t.me/+P7efOIgccWMwYWM9" data-telegram-cta="exit_popup" data-telegram-href>Join Telegram</a>
+        <button class="btn btn-ghost" id="tgModalNoThanks" type="button">Not now</button>
+      </div>
+    </div>
+  </div>
+
+  <script>document.getElementById('year').textContent = String(new Date().getFullYear());</script>
+  <script src="main.js" defer></script>
+</body>
+</html>
